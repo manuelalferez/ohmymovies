@@ -10,6 +10,8 @@ test('renders content', () => {
     description: 'Testing description',
   }
   const component = render(<Movie {...movie} />)
-  component.getByText('Testing title')
-  component.getByText('Testing description')
+  // component.getByText(movie.title)
+  // component.getByText(movie.description)
+  expect(component.container).toHaveTextContent(movie.title)
+  expect(component.container).toHaveTextContent(movie.description)
 })
