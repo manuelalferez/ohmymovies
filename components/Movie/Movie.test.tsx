@@ -1,5 +1,5 @@
 import React from 'react'
-import Movie from 'Movie'
+import Movie from './Movie'
 import '@testing-library/jest-dom/extend-expect'
 import { render } from '@testing-library/react'
 
@@ -10,5 +10,6 @@ test('renders content', () => {
     description: 'Testing description',
   }
   const component = render(<Movie {...movie} />)
-  console.log(component)
+  component.getByText('Testing title')
+  component.getByText('Testing description')
 })
