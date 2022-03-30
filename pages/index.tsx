@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Movie from '../components/Movie'
+import Movie from '../components/Movie/Movie'
 
 const Home: NextPage = () => {
   const movie: Movie = {
