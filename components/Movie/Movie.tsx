@@ -1,4 +1,5 @@
-const Movie = (movie: Movie) => {
+import { MovieType } from '../../types/movie'
+const Movie = (movie: MovieType) => {
   return (
     <div className="body-font text-2xl text-gray-600">
       <div className="container mx-auto px-5 py-24">
