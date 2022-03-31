@@ -1,9 +1,10 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Movie from '../components/Movie/Movie'
+import { MovieType } from '../types/movie'
 
 const Home: NextPage = () => {
-  const movie: Movie = {
+  const movie: MovieType = {
     title: 'Batman Begins',
     year: 2005,
     description:
